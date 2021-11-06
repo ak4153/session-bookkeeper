@@ -1,0 +1,31 @@
+<%- layout('/layouts/boilerplate') %>
+
+    <div class="container-fluid">
+
+        <form action="/sessions/add" method="POST" class="needs-validation" novalidate>
+            <div class="row ">
+
+                <div class="row mb-3">
+                    <label class=" form-label" for="Session">Session:</label>
+                    <input class=" form-control" type="text" id='Session' name="session[name]" required>
+                    <div class="valid-feedback">Looks Good</div>
+                    <div class="invalid-feedback">Incorrect</div>
+                </div>
+
+                <div class="row mb-3">
+                    <label class="form-label" for="price">Price:</label>
+                    <input class="form-control" type="text" id='price' name="session[price]" required>
+                    <div class="valid-feedback">Looks Good</div>
+                    <div class="invalid-feedback">Incorrect</div>
+                </div>
+                <div class="row mb-3">
+                    <label class="form-label" for="date">date:</label>
+                    <input class="form-control" type="date" id='date' name="session[date]">
+                    <div class="valid-feedback">Looks Good</div>
+                    <div class="invalid-feedback">Incorrect</div>
+                </div>
+                <div class="mb-3"><button class="btn btn-success">Add Session</button></div>
+
+            </div>
+        </form>
+    </div>

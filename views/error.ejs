@@ -1,0 +1,9 @@
+<%- layout('/layouts/boilerplate') %>
+    <% if(errorTitle) {%>
+        <h1>Error:
+            <%= errorTitle %>
+        </h1>
+        <% } %>
+            <% if(!errorTitle){ %>
+                <h1>Something went wrong</h1>
+                <% } %>

@@ -1,0 +1,50 @@
+<%- layout('/layouts/boilerplate') %>
+    <% if(currentUser){ %>
+        <h2>
+            Hello,
+
+            <%= currentUser.username %>
+
+        </h2>
+        <% } %>
+            <div class="card mb-3" style="width: 18rem;">
+
+                <ul class="list-group list-group-flush ">
+                    <a href="/sessions/months/1/2021">
+                        <li class="list-group-item">January</li>
+                    </a>
+                    <a href="/sessions/months/2/2021">
+                        <li class="list-group-item">February</li>
+                    </a>
+                    <a href="/sessions/months/3/2021">
+                        <li class="list-group-item">March</li>
+                    </a>
+                    <a href="/sessions/months/4/2021">
+                        <li class="list-group-item">April</li>
+                    </a>
+                    <a href="/sessions/months/5/2021">
+                        <li class="list-group-item">May</li>
+                    </a>
+                    <a href="/sessions/months/6/2021">
+                        <li class="list-group-item">June</li>
+                    </a>
+                    <a href="/sessions/months/7/2021">
+                        <li class="list-group-item">July</li>
+                    </a>
+                    <a href="/sessions/months/8/2021">
+                        <li class="list-group-item">August</li>
+                    </a>
+                    <a href="/sessions/months/9/2021">
+                        <li class="list-group-item">September</li>
+                    </a>
+                    <a href="/sessions/months/10/2021">
+                        <li class="list-group-item">October</li>
+                    </a>
+                    <a href="/sessions/months/11/2021">
+                        <li class="list-group-item">November</li>
+                    </a>
+                    <a href="/sessions/months/12/2021">
+                        <li class="list-group-item">December</li>
+                    </a>
+                </ul>
+            </div>

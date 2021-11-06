@@ -1,0 +1,20 @@
+<%- layout('/layouts/boilerplate') %>
+    <link rel="stylesheet" href="/css/add.css">
+
+
+
+    <form action="/sessions/add" method="POST" novalidate>
+        <%allSessions.forEach((ses)=>{%>
+            <input type="checkbox" class="btn-check" role="button" id="<%-ses%>" name="session[name]" value='<%-ses%>' autocomplete="off" />
+            <label class="btn btn-outline-primary" for="<%-ses%>">
+                <%= ses %>
+            </label>
+            <% }) %>
+                <div class="row mb-3">
+                    <label class="form-label" for="date">Date:</label>
+                    <input class="form-control" type="date" id='date' name="session[date]">
+                    <div class="valid-feedback">Looks Good</div>
+                    <div class="invalid-feedback">Incorrect</div>
+                </div>
+                <button class="btn btn-success">Add</button>
+    </form>

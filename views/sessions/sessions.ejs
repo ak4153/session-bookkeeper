@@ -1,0 +1,48 @@
+<%- layout('/layouts/boilerplate') %>
+
+    <div class="d-flex flex-row flex-wrap border border-5 ">
+        <% var total=0; %>
+            <% var count=0; %>
+                <% sessions.forEach((ses)=>{ %>
+                    <% count=count+1 %>
+                        <div class="card m-2 text-primary border border-3" style="width: 18rem;">
+                            <div class="card-header">
+                                Session:
+                                <%= ses.name %>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item text-success">
+                                    Price:
+                                    <%=ses.price %>
+                                        <% total=total+ses.price %>
+                                </li>
+                                <li class="list-group-item">
+                                    Date:
+                                    <%=ses.date.getDay()%>/
+                                        <%=ses.date.getMonth()+1%>/
+                                            <%=ses.date.getFullYear()%>
+                                </li>
+                                <li class="list-group-item m-auto">
+                                    <form action="/sessions/months/<%-ses.date.getMonth()+1%>/<%-ses.date.getFullYear()%>/<%-ses._id%>/delete?_method=DELETE" method='POST'>
+                                        <button class="btn btn-warning">Delete</button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                        <% }) %>
+
+
+    </div>
+    <div class="card d-flex m-2" style="width: 18rem;">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item text-success">Sessions:
+                <%= total %>
+            </li>
+            <li class="list-group-item">Total:
+                <%= count %>
+            </li>
+        </ul>
+        <!-- <div class="card-footer">
+            Card footer
+        </div> -->
+    </div>
