@@ -104,10 +104,9 @@ app.get("/", (req, res, next) => {
 });
 
 //db
-//"mongodb+srv://newuser:36987410@cluster0.3p3rz.mongodb.net/ses?retryWrites=true&w=majority"
+
 const db = mongoose
   .connect(
-    // "mongodb://127.0.0.1:27017/ses",
     dbUrl,
     { useNewUrlParser: true },
     { useCreateIndex: true },

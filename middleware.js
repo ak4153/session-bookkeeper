@@ -14,7 +14,7 @@ module.exports.blockLoggedIn = (req, res, next) => {
   var flag = false;
   if (req.path === "/login") flag = true;
   if (req.path === "/register") flag = true;
-  if (req.isAuthenticated() && req.path === "/login" && flag) {
+  if (req.isAuthenticated() && flag) {
     req.flash("error", "Already Logged-in");
     return res.redirect("/");
   }
