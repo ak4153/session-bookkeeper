@@ -1,10 +1,10 @@
 <div id="top"></div>
 
-[![Contributors][contributors-shield]][contributors-url]
+<!-- [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+[![MIT License][license-shield]][license-url] -->
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- PROJECT LOGO -->
@@ -143,9 +143,9 @@ GNU 3.0. See `LICENSE.txt` for more information.
 
 ## Contact
 
-AK - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+
+Project Link: [https://github.com/ak4153/session-bookkeeper/](https://github.com/ak4153/session-bookkeeper/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
