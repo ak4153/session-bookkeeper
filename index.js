@@ -17,6 +17,7 @@ const MongoDBStore = require("connect-mongo");
 //ENV
 const dbUrl = process.env.DB_URL || "mongodb://127.0.0.1:27017/ses";
 const secret = process.env.SECRET || "secret";
+const port = process.env.PORT || 3000;
 //middleware
 
 //models
@@ -26,7 +27,6 @@ const Session = require("./models/session");
 //passport
 const passport = require("passport");
 const LocalStrategy = require("passport-local");
-const port = process.env.PORT || 3000;
 
 //set express to app
 const app = express();
