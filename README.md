@@ -12,7 +12,7 @@
 </p>
 
 <h3>
-    Project is made with Model-Controller-View design pattern which divide the related program logic into 3 parts.
+    Project is made with Model-Controller-View design pattern which divides the related program logic into 3 parts.
 </h3>
 
 <h4>Includes full validation, including security measures from XSS attacks and script injection.</h4>
