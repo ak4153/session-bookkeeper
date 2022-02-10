@@ -1,4 +1,4 @@
-<h1>My second fullstack project</h1>
+
 
 <p>
     The problem - Calculating the monthly salary of the medical team in the operation room, from surgeries performed from private medicine
